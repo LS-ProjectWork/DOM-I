@@ -43,3 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let ctaImage = document.getElementById("cta-img");
 ctaImage.setAttribute('src', siteContent["cta"]["img-source"])
+
+let mainContentImage = document.getElementById("middle-img");
+mainContentImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
