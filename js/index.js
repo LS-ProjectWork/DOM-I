@@ -99,3 +99,7 @@ doc.textContent = "Doc";
 
 let newContent = document.querySelector('nav');
 newContent.appendChild(doc);
+
+let signUp = document.createElement('a');
+signUp.textContent = 'Sign Up';
+newContent.prepend(signUp);
