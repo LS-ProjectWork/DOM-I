@@ -84,3 +84,6 @@ subHeader[5].textContent = siteContent["contact"]["contact-h4"];
 sectionContent[5].textContent = siteContent["contact"]["address"];
 sectionContent[6].textContent = siteContent["contact"]["phone"];
 sectionContent[7].textContent = siteContent["contact"]["email"];
+
+// Footer
+sectionContent[8].textContent = siteContent["footer"]["copyright"];
