@@ -48,7 +48,7 @@ let mainContentImage = document.getElementById("middle-img");
 mainContentImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // Selectors
-let headerNav = document.getElementsByTagName("a");
+let headerNav = document.querySelectorAll("a");
 headerNav[0].textContent = siteContent["nav"]["nav-item-1"];
 headerNav[1].textContent = siteContent["nav"]["nav-item-2"];
 headerNav[2].textContent = siteContent["nav"]["nav-item-3"];
@@ -87,3 +87,15 @@ sectionContent[7].textContent = siteContent["contact"]["email"];
 
 // Footer
 sectionContent[8].textContent = siteContent["footer"]["copyright"];
+
+// Navigation Style
+headerNav.forEach(function(currentValue){
+  currentValue.style.color = 'green';
+})
+
+// Added Content
+let doc = document.createElement('a');
+doc.textContent = "Doc";
+
+let newContent = document.querySelector('nav');
+newContent.appendChild(doc);
