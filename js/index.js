@@ -50,3 +50,9 @@ mainContentImage.setAttribute('src', siteContent["main-content"]["middle-img-src
 // Selectors
 let headerNav = document.getElementsByTagName("a");
 headerNav[0].textContent = siteContent["nav"]["nav-item-1"]
+headerNav[1].textContent = siteContent["nav"]["nav-item-2"]
+headerNav[2].textContent = siteContent["nav"]["nav-item-3"]
+headerNav[3].textContent = siteContent["nav"]["nav-item-4"]
+headerNav[4].textContent = siteContent["nav"]["nav-item-5"]
+headerNav[5].textContent = siteContent["nav"]["nav-item-6"]
+
