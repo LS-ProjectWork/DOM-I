@@ -64,16 +64,23 @@ let ctaButton = document.querySelector("button");
 ctaButton.textContent = siteContent["cta"]["button"];
 
 // Main Content
-let mainSubHeader = document.querySelectorAll("h4");
-mainSubHeader[0].textContent = siteContent["main-content"]["features-h4"];
-mainSubHeader[1].textContent = siteContent["main-content"]["about-h4"];
-mainSubHeader[2].textContent = siteContent["main-content"]["services-h4"];
-mainSubHeader[3].textContent = siteContent["main-content"]["product-h4"];
-mainSubHeader[4].textContent = siteContent["main-content"]["vision-h4"];
+let subHeader = document.getElementsByTagName("h4");
+subHeader[0].textContent = siteContent["main-content"]["features-h4"];
+subHeader[1].textContent = siteContent["main-content"]["about-h4"];
+subHeader[2].textContent = siteContent["main-content"]["services-h4"];
+subHeader[3].textContent = siteContent["main-content"]["product-h4"];
+subHeader[4].textContent = siteContent["main-content"]["vision-h4"];
 
-let mainContent = document.querySelectorAll("p");
-mainContent[0].textContent = siteContent["main-content"]["features-content"];
-mainContent[1].textContent = siteContent["main-content"]["about-content"];
-mainContent[2].textContent = siteContent["main-content"]["services-content"];
-mainContent[3].textContent = siteContent["main-content"]["product-content"];
-mainContent[4].textContent = siteContent["main-content"]["vision-content"];
+let sectionContent = document.getElementsByTagName("p");
+sectionContent[0].textContent = siteContent["main-content"]["features-content"];
+sectionContent[1].textContent = siteContent["main-content"]["about-content"];
+sectionContent[2].textContent = siteContent["main-content"]["services-content"];
+sectionContent[3].textContent = siteContent["main-content"]["product-content"];
+sectionContent[4].textContent = siteContent["main-content"]["vision-content"];
+
+// Contact
+subHeader[5].textContent = siteContent["contact"]["contact-h4"];
+
+sectionContent[5].textContent = siteContent["contact"]["address"];
+sectionContent[6].textContent = siteContent["contact"]["phone"];
+sectionContent[7].textContent = siteContent["contact"]["email"];
