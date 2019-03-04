@@ -42,8 +42,11 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let ctaImage = document.getElementById("cta-img");
-ctaImage.setAttribute('src', siteContent["cta"]["img-source"])
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
 
 let mainContentImage = document.getElementById("middle-img");
 mainContentImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+// Selectors
+let headerNav = document.getElementsByTagName("a");
+headerNav[0].textContent = siteContent["nav"]["nav-item-1"]
