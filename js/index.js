@@ -49,10 +49,15 @@ mainContentImage.setAttribute('src', siteContent["main-content"]["middle-img-src
 
 // Selectors
 let headerNav = document.getElementsByTagName("a");
-headerNav[0].textContent = siteContent["nav"]["nav-item-1"]
-headerNav[1].textContent = siteContent["nav"]["nav-item-2"]
-headerNav[2].textContent = siteContent["nav"]["nav-item-3"]
-headerNav[3].textContent = siteContent["nav"]["nav-item-4"]
-headerNav[4].textContent = siteContent["nav"]["nav-item-5"]
-headerNav[5].textContent = siteContent["nav"]["nav-item-6"]
+headerNav[0].textContent = siteContent["nav"]["nav-item-1"];
+headerNav[1].textContent = siteContent["nav"]["nav-item-2"];
+headerNav[2].textContent = siteContent["nav"]["nav-item-3"];
+headerNav[3].textContent = siteContent["nav"]["nav-item-4"];
+headerNav[4].textContent = siteContent["nav"]["nav-item-5"];
+headerNav[5].textContent = siteContent["nav"]["nav-item-6"];
 
+let ctaMainText = document.querySelector("h1");
+ctaMainText.textContent = siteContent["cta"]["h1"];
+
+let ctaButton = document.getElementsByTagName("button");
+ctaButton.textContent = sitecontent["cta"]["button"];
