@@ -40,3 +40,62 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+let mainContentImage = document.getElementById("middle-img");
+mainContentImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// Selectors
+let headerNav = document.querySelectorAll("a");
+headerNav.forEach(function(currentValue, i) {
+  currentValue.textContent = siteContent["nav"][`nav-item-${i}`]
+});
+
+// CTA
+let ctaMainText = document.querySelector("h1");
+ctaMainText.textContent = siteContent["cta"]["h1"];
+
+let ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
+// Main Content
+let subHeader = document.querySelectorAll("h4");
+Array.from(subHeader)
+subHeader.forEach(function(currentValue, i) {
+  currentValue.textContent = siteContent.nav[i]
+});
+
+let sectionContent = document.getElementsByTagName("p");
+sectionContent[0].textContent = siteContent["main-content"]["features-content"];
+sectionContent[1].textContent = siteContent["main-content"]["about-content"];
+sectionContent[2].textContent = siteContent["main-content"]["services-content"];
+sectionContent[3].textContent = siteContent["main-content"]["product-content"];
+sectionContent[4].textContent = siteContent["main-content"]["vision-content"];
+
+// Contact
+subHeader[5].textContent = siteContent["contact"]["contact-h4"];
+
+sectionContent[5].textContent = siteContent["contact"]["address"];
+sectionContent[6].textContent = siteContent["contact"]["phone"];
+sectionContent[7].textContent = siteContent["contact"]["email"];
+
+// Footer
+sectionContent[8].textContent = siteContent["footer"]["copyright"];
+
+// Navigation Style
+headerNav.forEach(function(currentValue){
+  currentValue.style.color = 'green';
+})
+
+// Added Content
+let doc = document.createElement('a');
+doc.textContent = "Doc";
+
+let newContent = document.querySelector('nav');
+newContent.appendChild(doc);
+
+let signUp = document.createElement('a');
+signUp.textContent = 'Sign Up';
+newContent.prepend(signUp);
