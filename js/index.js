@@ -62,11 +62,10 @@ ctaButton.textContent = siteContent["cta"]["button"];
 
 // Main Content
 let subHeader = document.querySelectorAll("h4");
-subHeader[0].textContent = siteContent["main-content"]["features-h4"];
-subHeader[1].textContent = siteContent["main-content"]["about-h4"];
-subHeader[2].textContent = siteContent["main-content"]["services-h4"];
-subHeader[3].textContent = siteContent["main-content"]["product-h4"];
-subHeader[4].textContent = siteContent["main-content"]["vision-h4"];
+Array.from(subHeader)
+subHeader.forEach(function(currentValue, i) {
+  currentValue.textContent = siteContent.nav[i]
+});
 
 let sectionContent = document.getElementsByTagName("p");
 sectionContent[0].textContent = siteContent["main-content"]["features-content"];
